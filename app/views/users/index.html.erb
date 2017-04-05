@@ -1,0 +1,11 @@
+<% if flash[:error]%>
+  <%= flash[:error] %>
+<% end %>
+
+<h3>Login and Registration with Rails </h3>
+<%= render 'form' %>
+
+<p>
+  Already registered?
+</p>
+<%= link_to "Login", "/sessions" %>

@@ -1,0 +1,5 @@
+<%= form_for @post, url: posts_path do |f| %>
+  <%= f.label "Title" %> <%= f.text_field :title %>
+  <%= f.label "Description" %> <%= f.text_field :description %>
+  <%= f.button :submit%>
+  <% end %>

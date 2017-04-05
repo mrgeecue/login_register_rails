@@ -1,0 +1,16 @@
+<p style="color: green;"><%= notice %></p>
+<h1>Posts#index</h1>
+
+<%= link_to "Create a new post", "/posts/new"%>
+<hr />
+
+<h3>All Posts</h3>
+<% @posts.each do |post| %>
+
+  <h3><%= post.title %></h3>
+  <%= post.description %>
+  <%= post.id %>
+  <p><%= link_to "Edit", '/posts/:id' %> |
+     <%= link_to 'Delete', '/posts/:id', method: :delete, data: {confirm: "Are you sure?"} %>
+<hr>
+<% end %>
