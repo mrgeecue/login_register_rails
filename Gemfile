@@ -34,6 +34,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'hirb'
 gem 'simple_form'
 gem 'pry'
+gem 'bootstrap-sass', '3.3.6'
 
 
 # Use Capistrano for deployment

@@ -1,10 +1,12 @@
-<% if flash[:error]%>
-  <%= flash[:error] %>
-<% end %>
+<% flash.each do |key, value| %>
+  <p style="color: red;"><%= value %></p>
+      <% end %>
+
 
 <h3>Login and Registration with Rails </h3>
 <%= render 'form' %>
-
+<br />
+<br />
 <p>
   Already registered?
 </p>
